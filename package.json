@@ -7,13 +7,16 @@
   "scripts": {
     "start": "node Homework1/main.js",
     "homework1": "node Homework1/main.js",
-    "homework2": "node homework2/main.js"
+    "homework2": "node homework2/main.js",
+    "homework3:init": "node homework3/init.js",
+    "homework3:search": "node homework3/search.js"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {
     "@inquirer/prompts": "^5.5.0",
+    "@qdrant/js-client-rest": "^1.16.2",
     "dotenv": "^17.4.2",
     "lowdb": "^7.0.1",
     "openai": "^6.38.0"
