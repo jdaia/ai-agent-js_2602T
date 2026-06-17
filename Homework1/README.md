@@ -9,23 +9,6 @@
 
 ## 環境與執行
 
-### 公司網路 / Proxy
-
-若 `npm install` 出現 `403 Tunnel or SSL Forbidden`，請在專案根目錄設定 `.npmrc`（可複製 [`.npmrc.example`](../.npmrc.example)）：
-
-```ini
-registry=https://registry.npmmirror.com
-proxy=http://10.31.10.188:8080
-https-proxy=http://10.31.10.188:8080
-```
-
-PowerShell 亦可同時設定環境變數後再安裝：
-
-```powershell
-$env:HTTP_PROXY="http://10.31.10.188:8080"
-$env:HTTPS_PROXY="http://10.31.10.188:8080"
-npm install
-```
 
 若 `registry.npmjs.org` 被資安政策擋下，改用 `registry.npmmirror.com` 通常可透過 proxy 安裝。仍 403 時請向 IT 申請放行 npm registry，或改在 [GitHub Codespaces](https://github.com/kaochenlong/ai-agent-js) 執行。
 
