@@ -6,7 +6,8 @@
   "main": "main.js",
   "scripts": {
     "start": "node Homework1/main.js",
-    "homework1": "node Homework1/main.js"
+    "homework1": "node Homework1/main.js",
+    "homework2": "node homework2/main.js"
   },
   "engines": {
     "node": ">=18.0.0"

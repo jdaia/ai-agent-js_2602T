@@ -29,6 +29,11 @@ export async function addMessage(content, role = "user") {
   await db.write();
 }
 
+export async function appendMessage(message) {
+  db.data.messages.push(message);
+  await db.write();
+}
+
 export function getMessages() {
   return db.data.messages;
 }
